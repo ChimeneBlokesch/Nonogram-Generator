@@ -276,14 +276,12 @@ if __name__ == '__main__':
                      os.path.join("fill-in", "asp"),
                      include_grid=True, remove_value=1)
     generate_puzzles(n, width, height,
-                     os.path.join("validity", "images"),
-                     os.path.join("validity", "text"),
-                     os.path.join("validity", "asp"),
-                     include_grid=True, amount_mistakes=1,
-                     prefix_name="incorrect_")
+                     os.path.join("validity", "invalid", "images"),
+                     os.path.join("validity", "invalid", "text"),
+                     os.path.join("validity", "invalid", "asp"),
+                     include_grid=True, amount_mistakes=1)
     generate_puzzles(n, width, height,
-                     os.path.join("validity", "images"),
-                     os.path.join("validity", "text"),
-                     os.path.join("validity", "asp"),
-                     include_grid=True,
-                     prefix_name="correct_")
+                     os.path.join("validity", "valid", "images"),
+                     os.path.join("validity", "valid", "text"),
+                     os.path.join("validity", "valid", "asp"),
+                     include_grid=True)
