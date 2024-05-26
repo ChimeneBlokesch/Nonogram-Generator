@@ -128,7 +128,7 @@ def save_puzzle(grid, row_amounts, col_amounts, img_path, text_path, asp_path, p
         f.write(puzzle2text(grid, row_amounts, col_amounts,
                 in_between_spaces=2, include_grid=include_grid))
 
-    with open(os.path.join(asp_path, puzzle_name + '.asp'), 'w') as f:
+    with open(os.path.join(asp_path, puzzle_name + '.lp'), 'w') as f:
         f.write(puzzle2asp(grid, row_amounts, col_amounts,
                 width, height, include_grid=include_grid))
 
